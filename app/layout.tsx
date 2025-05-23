@@ -1,19 +1,21 @@
-import "./global.css"
+import "./global.css";
+import Navigation from "@/components/Navigation";
 
 export const metadata = {
-    title: "Diabetes Management Chat",
-    description: "A chatbot that helps you manage your condition in a reliable way.",
-}
+  title: "Diabetes Management Chat",
+  description:
+    "A chatbot that helps you manage your condition in a reliable way.",
+};
 
-
-const RootLayout = ({children}) => {
-    return (
-        <html lang="en">
-        <body>
+const RootLayout = ({ children }) => {
+  return (
+    <html lang="en">
+      <body>
+        <Navigation />
         {children}
-        </body>
-        </html>
-    )
-}
+      </body>
+    </html>
+  );
+};
 
-export default RootLayout
+export default RootLayout;

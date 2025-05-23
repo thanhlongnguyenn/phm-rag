@@ -51,7 +51,7 @@ export async function POST(req: Request) {
             const docsMap = documents?.map(doc => ({
                 id: doc._id,
                 text: doc.text,
-                vector: doc.vector,
+                vector: doc.$vector,
             }));
 
             // Log references to the console

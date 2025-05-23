@@ -4,11 +4,9 @@ import { Message } from "ai";
 
 import Bubble from "@/components/Bubble"
 import LoadingBubble from "@/components/LoadingBubble"
-import PromptSuggestionsRow from "@/components/PromptSuggestionsRow";
+
 
 const Home = () => {
-
-
     const {append, isLoading, messages, input, handleInputChange, handleSubmit } = useChat();
     const noMessage = !messages || messages.length === 0;
 
@@ -44,8 +42,6 @@ const Home = () => {
                 <input className="question-box" onChange={handleInputChange} value={input} placeholder="Ask me about your health problem" />
                 <input type="submit" />
             </form>
-
-
         </main>
     );
 };
